@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29201.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Clave.MementoMori", "src\Clave.MementoMori\Clave.MementoMori.csproj", "{356D8D6A-1F2C-47CC-847F-6614583AA49B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clave.MementoMori.Vsix", "src\Clave.MementoMori.Vsix\Clave.MementoMori.Vsix.csproj", "{58068151-0102-494E-99EB-D39E6EF6B240}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F7E953F8-BB71-4D91-BDD3-96B93A46C5FE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{9237BC9D-9C33-432B-970C-6AB91D37B983}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Clave.MementoMori.Test", "tests\Clave.MementoMori.Test\Clave.MementoMori.Test.csproj", "{9874F458-7F3E-4F67-85CE-3BECBE0F16B0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D62BFCD5-6590-4BBB-AC85-CCA0674A430F}"
+	ProjectSection(SolutionItems) = preProject
+		appveyor.yml = appveyor.yml
+		GitVersion.yml = GitVersion.yml
+		License.md = License.md
+		Readme.md = Readme.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{356D8D6A-1F2C-47CC-847F-6614583AA49B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{356D8D6A-1F2C-47CC-847F-6614583AA49B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{356D8D6A-1F2C-47CC-847F-6614583AA49B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{356D8D6A-1F2C-47CC-847F-6614583AA49B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58068151-0102-494E-99EB-D39E6EF6B240}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58068151-0102-494E-99EB-D39E6EF6B240}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58068151-0102-494E-99EB-D39E6EF6B240}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58068151-0102-494E-99EB-D39E6EF6B240}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9874F458-7F3E-4F67-85CE-3BECBE0F16B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9874F458-7F3E-4F67-85CE-3BECBE0F16B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9874F458-7F3E-4F67-85CE-3BECBE0F16B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9874F458-7F3E-4F67-85CE-3BECBE0F16B0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{356D8D6A-1F2C-47CC-847F-6614583AA49B} = {F7E953F8-BB71-4D91-BDD3-96B93A46C5FE}
+		{58068151-0102-494E-99EB-D39E6EF6B240} = {F7E953F8-BB71-4D91-BDD3-96B93A46C5FE}
+		{9874F458-7F3E-4F67-85CE-3BECBE0F16B0} = {9237BC9D-9C33-432B-970C-6AB91D37B983}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3024D71A-1A1E-4162-BFDA-6DB808D430DB}
+	EndGlobalSection
+EndGlobal

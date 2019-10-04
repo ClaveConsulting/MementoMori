@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.3</TargetFramework>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageId>Clave.MementoMori</PackageId>
+    <PackageIconUrl>https://raw.githubusercontent.com/ClaveConsulting/logo/master/png/logo_noText.png</PackageIconUrl>
+    <RepositoryUrl>https://github.com/ClaveConsulting/MementoMori</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/ClaveConsulting/MementoMori</PackageProjectUrl>
+    <Authors>Clave Consulting</Authors>
+    <Description>Remember that all code must eventually die</Description>
+    <NoPackageAnalysis>true</NoPackageAnalysis>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="2.6.2" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Workspaces" Version="2.10" PrivateAssets="all" />
+    <PackageReference Update="NETStandard.Library" PrivateAssets="all" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="tools\*.ps1" CopyToOutputDirectory="Always" Pack="true" PackagePath="" />
+    <None Include="$(OutputPath)\$(AssemblyName).dll" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false" />
+  </ItemGroup>
+
+</Project>
