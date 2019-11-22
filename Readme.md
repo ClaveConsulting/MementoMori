@@ -1,6 +1,6 @@
 # Clave.MementoMori
 
-[![Nuget](https://img.shields.io/nuget/v/Clave.MementoMori)][1] [![Nuget](https://img.shields.io/nuget/dt/Clave.MementoMori)][1] ![Azure DevOps builds](https://img.shields.io/azure-devops/build/ClaveConsulting/a22b6747-eeda-469d-a66e-30f176be2bce/11)
+[![Nuget](https://img.shields.io/nuget/v/Clave.MementoMori)][1] [![Nuget](https://img.shields.io/nuget/dt/Clave.MementoMori)][1] [![Build Status](https://claveconsulting.visualstudio.com/Nugets/_apis/build/status/ClaveConsulting.MementoMori?branchName=master)][2] [![Azure DevOps tests](https://img.shields.io/azure-devops/tests/ClaveConsulting/Nugets/11)][2]
 
 > Remember that all code will eventually die
 
@@ -42,3 +42,4 @@ More specifically, any `[Obsolete]` attribute with a comment containing `after y
 The MIT license
 
 [1]: https://www.nuget.org/packages/Clave.MementoMori/
+[2]: https://claveconsulting.visualstudio.com/Nugets/_build/latest?definitionId=11
