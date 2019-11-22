@@ -1,6 +1,6 @@
 # Clave.MementoMori
 
-[![Nuget](https://img.shields.io/nuget/v/Clave.MementoMori)][1] [![Nuget](https://img.shields.io/nuget/dt/Clave.MementoMori)][1]
+[![Nuget](https://img.shields.io/nuget/v/Clave.MementoMori)][1] [![Nuget](https://img.shields.io/nuget/dt/Clave.MementoMori)][1] 
 
 > Remember that all code will eventually die
 
