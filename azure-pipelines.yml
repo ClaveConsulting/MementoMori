@@ -13,6 +13,7 @@ steps:
     persistCredentials: true
 
   - task: NuGetToolInstaller@1
+    displayName: 'install latest nuget'
     inputs:
       checkLatest: true
 
@@ -63,7 +64,6 @@ steps:
       command: push
       nuGetFeedType: external
       externalEndpoint: Nuget
-      versioningScheme: byPrereleaseNumber
 
   - script: | 
       git config user.name AzureDevOps
