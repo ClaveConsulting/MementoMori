@@ -49,10 +49,6 @@ steps:
       zipAfterPublish: True
       nobuild: true
 
-  - task: NuGetAuthenticate@0
-    inputs:
-      nuGetServiceConnections: 'Nuget'
-
   - task: DotNetCoreCLI@2
     inputs:
       command: push
