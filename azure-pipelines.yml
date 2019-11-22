@@ -50,6 +50,7 @@ steps:
       command: pack
       packagesToPack: '**/Clave.MementoMori.csproj'
       includeSymbols: true
+      versioningScheme: byPrereleaseNumber
 
   - task: NuGetCommand@2
     displayName: 'nuget push $(buildConfiguration)'
