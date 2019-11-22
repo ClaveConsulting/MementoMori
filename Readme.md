@@ -1,5 +1,7 @@
 # Clave.MementoMori
 
+[![Nuget](https://img.shields.io/nuget/v/Clave.MementoMori)][1] [![Nuget](https://img.shields.io/nuget/dt/Clave.MementoMori)][1]
+
 > Remember that all code will eventually die
 
 ## Todo before
@@ -38,3 +40,5 @@ More specifically, any `[Obsolete]` attribute with a comment containing `after y
 ## License
 
 The MIT license
+
+[1]: https://www.nuget.org/packages/Clave.MementoMori/

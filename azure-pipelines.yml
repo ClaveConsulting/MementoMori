@@ -8,6 +8,10 @@ variables:
   buildConfiguration: 'Release'
 
 steps:
+  - task: NuGetToolInstaller@1
+    inputs:
+      checkLatest: true
+
   - task: GitVersion@5
     displayName: 'GitVersion'
     inputs:
