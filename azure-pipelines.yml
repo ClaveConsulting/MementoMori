@@ -1,5 +1,5 @@
 trigger:
-- master
+- pipeline
 pool:
   name: Default
 
