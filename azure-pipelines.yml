@@ -8,6 +8,10 @@ variables:
   buildConfiguration: 'Release'
 
 steps:
+  - checkout: self
+    clean: true
+    persistCredentials: true
+
   - task: NuGetToolInstaller@1
     inputs:
       checkLatest: true
@@ -64,5 +68,5 @@ steps:
       git config user.name AzureDevOps
       git config user.email azure@clave.no
       git tag "v$(GitVersion.SemVer)" -m "v$(GitVersion.SemVer)"
-      git push "v$(GitVersion.SemVer)"
+      git push origin "v$(GitVersion.SemVer)"
     displayName: 'git push tag'
