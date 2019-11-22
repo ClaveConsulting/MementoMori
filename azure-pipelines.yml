@@ -47,6 +47,7 @@ steps:
       projects: '**/Clave.MementoMori.csproj'
       arguments: '--configuration $(BuildConfiguration) --output $(build.artifactstagingdirectory)'
       zipAfterPublish: True
+      nobuild: true
 
   - task: NuGetAuthenticate@0
     inputs:
