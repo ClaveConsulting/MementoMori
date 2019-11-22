@@ -60,14 +60,6 @@ steps:
       externalEndpoint: Nuget
       versioningScheme: byPrereleaseNumber
 
-  - task: BatchScript@1
-    displayName: 'git tag v$(GitVersion.SemVer)'
-    inputs:
-      filename: 'git'
-      arguments: 'tag "v$(GitVersion.SemVer)" -m "v$(GitVersion.SemVer)"'
+  - script: 'git tag "v$(GitVersion.SemVer)" -m "v$(GitVersion.SemVer)"'
 
-  - task: BatchScript@1
-    displayName: 'git push v$(GitVersion.SemVer)'
-    inputs:
-      filename: 'git'
-      arguments: 'push "v$(GitVersion.SemVer)"'
+  - script: 'git push "v$(GitVersion.SemVer)"'
