@@ -60,6 +60,9 @@ steps:
       externalEndpoint: Nuget
       versioningScheme: byPrereleaseNumber
 
-  - script: 'git tag "v$(GitVersion.SemVer)" -m "v$(GitVersion.SemVer)"'
-
-  - script: 'git push "v$(GitVersion.SemVer)"'
+  - script: | 
+      git config user.name AzureDevOps
+      git config user.email azure@clave.no
+      git tag "v$(GitVersion.SemVer)" -m "v$(GitVersion.SemVer)"
+      git push "v$(GitVersion.SemVer)"
+    displayName: 'git push tag'
