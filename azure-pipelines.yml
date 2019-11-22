@@ -46,7 +46,7 @@ steps:
     displayName: 'dotnet test $(buildConfiguration)'
     inputs:
       command: test
-      projects: '**/*Tests/Clave.MementoMori.csproj'
+      projects: 'tests/*/*.Test.csproj'
       arguments: '--configuration $(buildConfiguration)'
 
   - task: NuGetCommand@2
