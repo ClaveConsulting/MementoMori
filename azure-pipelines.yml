@@ -49,7 +49,7 @@ steps:
       zipAfterPublish: True
       nobuild: true
 
-  - task: DotNetCoreCLI@2
+  - task: NuGetCommand@2
     inputs:
       command: push
       nuGetFeedType: external
